@@ -1,1 +1,1 @@
-aws ansible_host=52.90.159.165
+aws ansible_host=52.90.159.165 ansible_user=admin ansible_ssh_pass=admin
