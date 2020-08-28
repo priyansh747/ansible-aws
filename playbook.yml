@@ -1,6 +1,25 @@
 -
-  name: 'Test Connectivity'
-  hosts: aws
+  name: Test connectivity to target servers
+  hosts: localhost
   tasks:
-    - name: Execute a ping command
-      ping:
+    - name: Display resolv.conf contents
+      command: cat resolv.conf
+      register: resolvout
+      args:
+              chdir: /etc
+    - debug:
+            var: resolvout.stdout_lines
+
+    - name: Display date
+      command: date
+      register: date
+
+    - debug:
+            var: date.stdout_lines
+
+    - name: Display uptime
+      command: uptime
+      register: uptime
+
+    - debug:
+            var: uptime.stdout_lines
