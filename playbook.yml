@@ -1,6 +1,6 @@
 -
   name: Test connectivity to target servers
-  hosts: localhost
+  hosts: aws
   tasks:
     - name: Display resolv.conf contents
       command: cat resolv.conf
