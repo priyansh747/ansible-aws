@@ -1,0 +1,1 @@
+aws ansible_host=<<ec2-instance-ip>>
