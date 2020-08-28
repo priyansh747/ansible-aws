@@ -1,0 +1,6 @@
+-
+  name: 'Test Connectivity'
+  hosts: aws
+  tasks:
+    - name: Execute a ping command
+      ping:
