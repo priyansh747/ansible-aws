@@ -1,1 +1,1 @@
-aws ansible_host=<<ec2-instance-ip>>
+aws ansible_host=54.162.236.0
